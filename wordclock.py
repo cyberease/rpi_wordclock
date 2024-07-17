@@ -124,8 +124,8 @@ class wordclock:
         """
 
         try:
-	        logging.info('Running plugin ' + self.plugins[self.plugin_index].name + '.')
-	        self.plugins[self.plugin_index].run(self.wcd, self.wci)
+            logging.info('Running plugin ' + self.plugins[self.plugin_index].name + '.')
+            self.plugins[self.plugin_index].run(self.wcd, self.wci)
         except:
             logging.error('Error in plugin ' + self.plugins[self.plugin_index].name + '.')
             logging.error('PLEASE PROVIDE THE CURRENT SOFTWARE VERSION (GIT HASH), WHEN REPORTING THIS ERROR: ' + self.currentGitHash)
